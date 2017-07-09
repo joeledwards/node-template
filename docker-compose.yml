@@ -1,0 +1,10 @@
+version: "3"
+services:
+  node:
+    image: node:alpine
+    volumes:
+      - ".:/opt/server"
+    ports:
+      - "8080"
+		working_dir: /opt/server
+    command: npm start
